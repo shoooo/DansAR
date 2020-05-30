@@ -2,7 +2,8 @@
     <div class="header">
         <nav class="navbar navbar-dark bg-primary">
             <a class="navbar-brand" href="#">DansAR Dashboard | Welcome</a>
-            <a class="navbar-brand" href="#">upload</a>
+            <input id="userInput">
+            <button class="btn btn-primary" onclick="execute()">execute</button>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -10,19 +11,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="navbar-item">
-                        <a class="nav-link" href="/users/dashboard">Home</a>
+                        <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="nav-link" href="/users/profile">Profile</a>
+                        <a class="nav-link" href="#">Profile</a>
                     </li>
                     <li class="navbar-item">
                         <a class="nav-link" href="#">Calendar</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="nav-link" href="/choreo/welcome">Switch to Choreographer</a>
+                        <a class="nav-link" href="#">Switch to Choreographer</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="nav-link" href="/users/logout">Log out</a>
+                        <a class="nav-link" href="#">Log out</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -51,8 +52,8 @@
             <img src="https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg"
                 class="card-img-top" alt="Tracker">
             <div class="card-body">
-                <h4 class="card-title"><%= dName %></h4>
-                <p class="card-text"><%= name %></p>
+                <h4 class="card-title"></h4>
+                <p class="card-text"></p>
                 <a href="/ar/:id" class="btn btn-primary">Dance with AR</a>
             </div>
         </div>

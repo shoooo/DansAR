@@ -2,6 +2,8 @@ const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 const flash = require('connect-flash');
 const session = require('express-session');
+const path = require('path');
+
 
 require('dotenv').config();
 
@@ -31,6 +33,8 @@ app.use((req, res, next) => {
     res.locals.error = req.flash('error');
     next();
 });
+
+app.use('/', express.static(path.join(__dirname, 'api')))
 
 // Routes
 app.use('/', require('./routes/index'));
