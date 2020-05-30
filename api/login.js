@@ -38,9 +38,9 @@ if (fs.existsSync(keyPath)) {
  * Create a new OAuth2 client with the configured keys.
  */
 const oauth2Client = new google.auth.OAuth2(
-    '898018842927-tt3o7nse86uvkm42pefmf34hp1hobhnn.apps.googleusercontent.com',
-    'Dh4zXfKSGOBrRU45NRTZepn4',
-    'http://dans-ar.sakura.ne.jp/search.html'
+    process.env.ID,
+    process.env.SECRET,
+    process.env.REDIRECT,
 );
 
 /**
