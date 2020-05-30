@@ -1,0 +1,75 @@
+<div class="header">
+    <nav class="navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">DansAR Dashboard | Welcome</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="navbar-item">
+                    <a class="nav-link" href="/choreo/dashboard">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="/choreo/profile">Profile</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="#">Calendar</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="#">Switch to Dancer</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="/users/logout">Log out</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="#">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-menu" href="#"><img src="#"></a>
+                        <a class="dropdown-menu" href="#"><img src="#"></a>
+                        <a class="dropdown-menu" href="#"><img src="#"></a>
+                        <a class="dropdown-menu" href="#"><img src="#"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<% for (var i=0; i < 6; i++) { %>
+<div class="card-deck">
+    <div class="card" style="margin:20px;">
+        <img src="https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg"
+            class="card-img-top" alt="Tracker">
+        <div class="card-body">
+            <h4 class="card-title"></h4>
+            <p class="card-text"></p>
+            <a href="/ar/:id" class="btn btn-primary">Dance with AR</a>
+        </div>
+    </div>
+    <div class="card" style="margin:20px;">
+        <img src="https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg"
+            class="card-img-top" alt="Tracker">
+        <div class="card-body">
+            <h4 class="card-title">Locking</h4>
+            <p class="card-text">Locking or Campbellocking is a dance art form with improvisational move called the lock
+                which
+                arose from the 1970's funk culture.</p>
+            <a href="/ar" class="btn btn-primary">Dance with AR</a>
+        </div>
+    </div>
+    <div class="card" style="margin:20px;">
+        <img src="https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg"
+            class="card-img-top" alt="Tracker">
+        <div class="card-body">
+            <h4 class="card-title">House</h4>
+            <p class="card-text">House dancing is a culture that promotes freedom of expression, sharing, a sense of
+                family
+                and an honest connection with the music.</p>
+            <a href="/ar" class="btn btn-primary">Dance with AR</a>
+        </div>
+    </div> -->
+</div>
+<% } %>
